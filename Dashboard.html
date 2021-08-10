@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    table {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-collapse: collapse;
+        width: 800px;
+        height: 200px;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    tr {
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    th,
+    td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    #header {
+        background-color: red;
+        color: #fff;
+    }
+    
+    h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: red;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    
+    tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media only screen and (max-width: 768px) {
+        table {
+            width: 90%;
+        }
+    }
+</style>
+<body>
+    <div class="wrapper">
+         <nav class="navbar">
+            <img class="logo" src="logo.jpg">
+            <ul>
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./slogin.html">Student Login</a></li>
+                <li><a href="./sign_up.html">Sign Up</a></li>
+                <li><a href="./slogin.html">Admin Login</a></li>
+                <li><a href="./Dashboard.html">Dashboard</a></li>
+            </ul>
+         </nav>
+<h1>Student Rankings</h1>
+    <hr>
+
+    <table>
+        <tr id="header">
+            <th>name</th>
+            <th>Rollno</th>
+            <th>Hackerrank</th>
+            <th>CodeChef</th>
+            <th>Codeforces</th>
+            <th>Hackerearth</th>
+            <th>Online Judge</th>
+        </tr>
+        <tr>
+            <td>Raju</td>
+            <td>5C0</td>
+            <td>111</td>
+            <td>130</td>
+            <td>777</td>
+            <td>1002</td>
+            <td>Professor Karim</td>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>5M0</td>
+            <td>2311</td>
+            <td>1890</td>
+            <td>2369</td>
+            <td>1562</td>
+            <td>Professor Kevin</td>
+
+        </tr>
+        <tr>
+            <td>Prashant</td>
+            <td>4E5</td>
+            <td>3528</td>
+            <td>9087</td>
+            <td>6565</td>
+            <td>2112</td>
+            <td>Professor Steven</td>
+
+        </tr>
+        <tr>
+           <td>Karthik</td>
+            <td>3D7</td>
+            <td>2901</td>
+            <td>7643</td>
+            <td>9897</td>
+            <td>6754</td>
+            <td>Professor John</td>
+
+        </tr>
+        <tr>
+            <td>Naveen</td>
+            <td>12A9</td>
+            <td>6753</td>
+            <td>7997</td>
+            <td>1012</td>
+            <td>8768</td>
+            <td>Professor Adam</td>
+
+        </tr>
+        <tr>
+            <td>Pruthvi</td>
+            <td>4D0</td>
+            <td>1811</td>
+            <td>3040</td>
+            <td>6712</td>
+            <td>9879</td>
+            <td>Professor David</td>
+
+        </tr>
+
+    </table>
+</div>
+</body>
+
+</html>
